@@ -1,4 +1,4 @@
-🛒 Sistema de Gerenciamento de E-commerce
+ Sistema de Gerenciamento de E-commerce
 
 Este projeto foi desenvolvido com o objetivo de aplicar conceitos de Programação Orientada a Objetos (POO) na construção de um sistema que simula o funcionamento de uma plataforma de comércio eletrônico.
 
@@ -6,7 +6,7 @@ O sistema representa, de forma simplificada, o funcionamento de uma loja virtual
 
 Sistemas semelhantes são utilizados em grandes plataformas digitais de vendas, sendo a base de empresas como Amazon, Mercado Livre e Shoppe.
 
-🎯 Objetivo do Projeto
+ Objetivo do Projeto
 
 O objetivo principal do projeto é desenvolver um sistema capaz de:
 
@@ -40,11 +40,11 @@ Herança
 
 Polimorfismo
 
-🧱 Estrutura do Projeto
+ Estrutura do Projeto
 
 O sistema é composto por três classes principais que representam as entidades fundamentais de uma loja virtual.
 
-1️⃣ Classe Produto
+1️. Classe Produto
 
 A classe Produto representa um item disponível para venda dentro da loja virtual.
 
@@ -79,7 +79,7 @@ Verifica se o produto ainda possui unidades disponíveis em estoque.
 exibirInformacoes()
 Apresenta os dados do produto, como nome, preço, categoria e quantidade disponível.
 
-2️⃣ Classe CarrinhoDeCompras
+2️. Classe CarrinhoDeCompras
 
 A classe CarrinhoDeCompras simula o carrinho utilizado por um cliente durante o processo de compra em uma loja virtual.
 
@@ -105,7 +105,7 @@ Calcula o valor total da compra com base no preço e quantidade de cada item.
 exibirCarrinho()
 Mostra todos os produtos presentes no carrinho e suas respectivas quantidades.
 
-3️⃣ Classe SistemaEcommerce
+3️. Classe SistemaEcommerce
 
 A classe SistemaEcommerce representa o núcleo do sistema da loja virtual.
 
@@ -133,7 +133,7 @@ Registra um pedido realizado por um cliente e atualiza o estoque dos produtos co
 calcularFaturamento()
 Calcula o faturamento total da loja com base nos pedidos realizados.
 
-🔗 Relacionamento entre Classes
+ Relacionamento entre Classes
 
 A interação entre as classes ocorre da seguinte forma:
 
@@ -150,7 +150,7 @@ CarrinhoDeCompras
 O SistemaEcommerce administra todos os produtos disponíveis na loja.
 Esses produtos podem ser adicionados ao CarrinhoDeCompras, onde os clientes realizam suas compras.
 
-🧠 Conceitos de POO Aplicados
+ Conceitos de POO Aplicados
 Encapsulamento
 
 Os atributos das classes são protegidos e manipulados por meio de métodos específicos, garantindo maior controle e segurança sobre os dados do sistema.
@@ -175,7 +175,7 @@ O polimorfismo permite que diferentes tipos de produtos possuam comportamentos p
 
 Isso facilita a extensão do sistema, permitindo adicionar novos tipos de produtos sem alterar a lógica central da aplicação.
 
-⚙️ Funcionalidades do Sistema
+ Funcionalidades do Sistema
 
 Entre as principais funcionalidades implementadas no sistema estão:
 
@@ -191,7 +191,7 @@ Registro de vendas realizadas
 
 Controle de faturamento da loja
 
-📊 Cálculos Utilizados
+ Cálculos Utilizados
 Valor Total do Pedido
 
 O valor total de uma compra é calculado somando o valor de todos os produtos multiplicados por suas respectivas quantidades.
@@ -208,17 +208,17 @@ Fórmula:
 
 Estoque_novo = Estoque_atual − Quantidade_vendida
 
-⚠️ Controle de Estoque
+ Controle de Estoque
 
 O sistema verifica se um produto ainda possui unidades disponíveis para venda.
 
 Caso o estoque de um produto atinja zero, o sistema pode indicar:
 
-⚠️ PRODUTO ESGOTADO
+ PRODUTO ESGOTADO
 
 Esse comportamento simula situações comuns em plataformas reais de comércio eletrônico.
 
-🛠️ Possíveis Melhorias Futuras
+ Possíveis Melhorias Futuras
 
 O projeto pode ser expandido com novas funcionalidades, tais como:
 
@@ -234,7 +234,7 @@ Integração com banco de dados
 
 Histórico de compras por cliente
 
-🎓 Contexto Acadêmico
+ Contexto Acadêmico
 
 Este projeto foi desenvolvido como uma aplicação prática dos conceitos de:
 
