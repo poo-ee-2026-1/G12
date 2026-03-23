@@ -2,16 +2,27 @@
 
 CRONOGRAMA	
 23/03/2026	Fixar o objetivo da loja
+
 30/03/2026	Montar lista de produtos
+
 06/04/2026	Criação de perfil da loja (P/clientes)
+
 13/04/2026	
+
 20/04/2026	Faturamento da loja diário
+
 27/04/2026	
+
 04/05/2026	Histórico de vendas
+
 11/05/2026	Agregação Herança
+
 18/05/2026	
+
 25/05/2026	Encapsulamento
+
 01/06/2026	Finalização do projeto
+
 
 Este projeto foi desenvolvido com o objetivo de aplicar conceitos de Programação Orientada a Objetos (POO) na construção de um sistema que simula o funcionamento de uma plataforma de comércio eletrônico.
 
