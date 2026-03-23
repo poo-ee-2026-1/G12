@@ -200,7 +200,7 @@ Fórmula:
 
 Total = ∑ (preço × quantidade)
 
-Atualização de Estoque
+Atualização de Estoque:
 
 Após a realização de uma compra, o estoque do produto é atualizado automaticamente.
 
