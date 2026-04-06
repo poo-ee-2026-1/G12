@@ -7,7 +7,7 @@ CRONOGRAMA
 
 06/04/2026	Criação de perfil da loja (P/clientes)
 
-13/04/2026	
+13/04/2026
 
 20/04/2026	Faturamento da loja diário
 
@@ -24,248 +24,151 @@ CRONOGRAMA
 01/06/2026	Finalização do projeto
 
 
-Este projeto foi desenvolvido com o objetivo de aplicar conceitos de Programação Orientada a Objetos (POO) na construção de um sistema que simula o funcionamento de uma plataforma de comércio eletrônico.
+Projeto: Sistema de Loja Esportiva Virtual com POO
 
-O sistema representa, de forma simplificada, o funcionamento de uma loja virtual, permitindo cadastrar produtos, controlar estoque, gerenciar carrinhos de compras e registrar pedidos realizados por clientes.
+Este projeto foi desenvolvido para aplicar conceitos de Programação Orientada a Objetos (POO) em um sistema que simula o funcionamento de uma loja esportiva virtual.
 
-Sistemas semelhantes são utilizados em grandes plataformas digitais de vendas, sendo a base de empresas como Amazon, Mercado Livre e Shoppe.
+O sistema permite cadastrar produtos esportivos, controlar estoque, gerenciar carrinhos de compras e registrar pedidos realizados por clientes, simulando a experiência de compra de grandes plataformas de e-commerce, mas voltada exclusivamente para artigos esportivos.
 
- Objetivo do Projeto
+Objetivo do Projeto
 
-O objetivo principal do projeto é desenvolver um sistema capaz de:
+O objetivo principal é criar um sistema capaz de:
 
-Gerenciar produtos de uma loja virtual
-
+Gerenciar produtos esportivos da loja virtual, como tênis, roupas e equipamentos
 Controlar o estoque de mercadorias
-
-Simular um carrinho de compras
-
-Calcular o valor total de pedidos
-
-Registrar compras realizadas por clientes
-
+Simular um carrinho de compras para clientes
+Registrar compras realizadas
 Gerar controle de faturamento da loja
 
-Além disso, o projeto busca integrar conceitos importantes do comércio eletrônico, como:
+Além disso, o projeto integra conceitos importantes do comércio eletrônico adaptados ao segmento esportivo, como:
 
-Gestão de produtos
+Gestão de produtos por categoria esportiva
+Controle de estoque de produtos de alta e baixa rotatividade
+Processamento de pedidos com atualização automática de estoque
+Gestão do faturamento por vendas realizadas
 
-Controle de estoque
-
-Processamento de pedidos
-
-Cálculo de faturamento
-
-Paralelamente, o sistema aplica conceitos fundamentais de Programação Orientada a Objetos, incluindo:
+Paralelamente, o sistema aplica conceitos fundamentais de POO, incluindo:
 
 Encapsulamento
-
 Herança
-
 Polimorfismo
+Estrutura do Projeto
 
- Estrutura do Projeto
+O sistema é composto por três classes principais que representam as entidades fundamentais de uma loja esportiva:
 
-O sistema é composto por três classes principais que representam as entidades fundamentais de uma loja virtual.
+1️. Classe ProdutoEsportivo
 
-1️. Classe Produto
+A classe ProdutoEsportivo representa cada item disponível para venda na loja, como:
 
-A classe Produto representa um item disponível para venda dentro da loja virtual.
+Tênis de corrida
+Bola de futebol
+Camisas de times
+Luvas de boxe
+Acessórios fitness (garrafas, tapetes, faixas elásticas, etc.)
 
-Cada objeto dessa classe corresponde a um produto real comercializado na plataforma, como por exemplo:
-
-notebooks
-
-celulares
-
-roupas
-
-acessórios
-
-Atributos
+Atributos:
 
 nome
-
 preco
-
 estoque
+categoria (ex: calçados, equipamentos, vestuário)
 
-categoria
+Métodos:
 
-Métodos
-
-atualizarEstoque(quantidade)
-Atualiza a quantidade disponível do produto após uma venda ou reposição.
-
-verificarDisponibilidade()
-Verifica se o produto ainda possui unidades disponíveis em estoque.
-
-exibirInformacoes()
-Apresenta os dados do produto, como nome, preço, categoria e quantidade disponível.
-
+atualizarEstoque(quantidade) → Atualiza a quantidade disponível após venda ou reposição
+verificarDisponibilidade() → Verifica se o produto ainda possui unidades disponíveis
+exibirInformacoes() → Exibe detalhes do produto, incluindo nome, preço, categoria e quantidade em estoque
 2️. Classe CarrinhoDeCompras
 
-A classe CarrinhoDeCompras simula o carrinho utilizado por um cliente durante o processo de compra em uma loja virtual.
+Simula o carrinho utilizado pelo cliente durante a compra na loja esportiva.
 
-Ela permite que produtos sejam adicionados ou removidos antes da finalização do pedido.
+Atributos:
 
-Atributos
+listaProdutos (produtos adicionados ao carrinho)
+quantidadeProdutos (quantidade de cada produto)
 
-listaProdutos
+Métodos:
 
-quantidadeProdutos
+adicionarProduto(produto, quantidade) → Adiciona produtos ao carrinho, incluindo a quantidade desejada
+removerProduto(produto) → Remove produtos previamente adicionados
+exibirCarrinho() → Mostra todos os produtos no carrinho e suas quantidades
 
-Métodos
+O carrinho permite ao cliente revisar os itens antes de finalizar a compra, simulando o processo real de e-commerce.
 
-adicionarProduto(produto, quantidade)
-Adiciona um produto ao carrinho juntamente com a quantidade desejada.
+3️. Classe SistemaLojaEsportiva
 
-removerProduto(produto)
-Remove um produto previamente adicionado ao carrinho.
+Representa o núcleo do sistema, responsável por gerenciar os produtos e registrar os pedidos dos clientes.
 
-calcularTotal()
-Calcula o valor total da compra com base no preço e quantidade de cada item.
+Atributos:
 
-exibirCarrinho()
-Mostra todos os produtos presentes no carrinho e suas respectivas quantidades.
+listaProdutos (todos os produtos disponíveis na loja)
+pedidosRealizados (histórico de compras)
+faturamentoTotal (valor total das vendas)
 
-3️. Classe SistemaEcommerce
+Métodos:
 
-A classe SistemaEcommerce representa o núcleo do sistema da loja virtual.
+cadastrarProduto(produto) → Adiciona novos produtos ao catálogo da loja
+listarProdutos() → Exibe todos os produtos disponíveis para venda
+registrarPedido(carrinho) → Registra o pedido do cliente e atualiza automaticamente o estoque dos produtos comprados
 
-Ela é responsável por gerenciar os produtos disponíveis e registrar os pedidos realizados pelos clientes.
+O SistemaLojaEsportiva é responsável por organizar todo o funcionamento da loja, garantindo que os produtos estejam disponíveis e que as compras sejam corretamente registradas.
 
-Atributos
+Relacionamento entre Classes
 
-listaProdutos
+O fluxo de interação entre as classes é o seguinte:
 
-pedidosRealizados
-
-faturamentoTotal
-
-Métodos
-
-cadastrarProduto(produto)
-Adiciona um novo produto ao catálogo da loja.
-
-listarProdutos()
-Exibe todos os produtos disponíveis no sistema.
-
-registrarPedido(carrinho)
-Registra um pedido realizado por um cliente e atualiza o estoque dos produtos comprados.
-
-calcularFaturamento()
-Calcula o faturamento total da loja com base nos pedidos realizados.
-
- Relacionamento entre Classes
-
-A interação entre as classes ocorre da seguinte forma:
-
-SistemaEcommerce
+SistemaLojaEsportiva
        │
        │ gerencia
        ▼
-     Produto
+   ProdutoEsportivo
        │
        │ adicionado ao
        ▼
-CarrinhoDeCompras
+ CarrinhoDeCompras
 
-O SistemaEcommerce administra todos os produtos disponíveis na loja.
-Esses produtos podem ser adicionados ao CarrinhoDeCompras, onde os clientes realizam suas compras.
+O SistemaLojaEsportiva administra todos os produtos disponíveis na loja. Os produtos podem ser adicionados ao CarrinhoDeCompras, permitindo que os clientes finalizem suas compras de forma organizada e eficiente.
 
- Conceitos de POO Aplicados
-Encapsulamento
+Conceitos de POO Aplicados
 
-Os atributos das classes são protegidos e manipulados por meio de métodos específicos, garantindo maior controle e segurança sobre os dados do sistema.
+Encapsulamento:
+Os atributos das classes são protegidos e manipulados por métodos específicos, garantindo maior controle e segurança sobre os dados.
 
-Herança
+Herança:
+A classe ProdutoEsportivo pode servir como base para diferentes tipos de produtos especializados:
 
-A classe Produto pode servir como base para diferentes tipos de produtos especializados.
+Calçados → podem ter atributos como número, tipo de pisada e material
+Vestuário → podem ter tamanho, material e gênero
+Equipamentos → podem ter peso, tipo de uso e categoria esportiva
 
-Cada tipo de produto pode possuir características adicionais específicas.
+Polimorfismo:
+Permite que diferentes tipos de produtos possuam comportamentos próprios em métodos específicos, mantendo a mesma estrutura básica da classe principal. Isso facilita a expansão do sistema, permitindo adicionar novos tipos de produtos sem alterar a lógica central.
 
-Exemplos:
+Funcionalidades do Sistema
 
-Eletrônicos → podem possuir garantia
+Entre as principais funcionalidades implementadas estão:
 
-Roupas → possuem tamanho
-
-Livros → possuem autor
-
-Polimorfismo
-
-O polimorfismo permite que diferentes tipos de produtos possuam comportamentos próprios em determinados métodos, mantendo a mesma estrutura básica herdada da classe principal.
-
-Isso facilita a extensão do sistema, permitindo adicionar novos tipos de produtos sem alterar a lógica central da aplicação.
-
- Funcionalidades do Sistema
-
-Entre as principais funcionalidades implementadas no sistema estão:
-
-Cadastro de produtos
-
-Controle de estoque
-
+Cadastro de produtos esportivos
+Controle de estoque (indicando produtos esgotados quando necessário)
 Simulação de carrinho de compras
-
-Cálculo automático do valor total da compra
-
 Registro de vendas realizadas
-
 Controle de faturamento da loja
-
- Cálculos Utilizados
-Valor Total do Pedido
-
-O valor total de uma compra é calculado somando o valor de todos os produtos multiplicados por suas respectivas quantidades.
-
-Fórmula:
-
-Total = ∑ (preço × quantidade)
-
-Atualização de Estoque:
-
-Após a realização de uma compra, o estoque do produto é atualizado automaticamente.
-
-Fórmula:
-
-Estoque_novo = Estoque_atual − Quantidade_vendida
-
- Controle de Estoque
-
-O sistema verifica se um produto ainda possui unidades disponíveis para venda.
-
-Caso o estoque de um produto atinja zero, o sistema pode indicar:
-
- PRODUTO ESGOTADO
-
-Esse comportamento simula situações comuns em plataformas reais de comércio eletrônico.
-
- Possíveis Melhorias Futuras
+Possíveis Melhorias Futuras
 
 O projeto pode ser expandido com novas funcionalidades, tais como:
 
 Sistema de login para clientes
-
 Avaliação de produtos por usuários
-
-Recomendações de produtos
-
-Dashboard de vendas
-
+Recomendações de produtos personalizadas
+Dashboard de vendas por categoria
 Integração com banco de dados
-
 Histórico de compras por cliente
-
- Contexto Acadêmico
+Contexto Acadêmico
 
 Este projeto foi desenvolvido como uma aplicação prática dos conceitos de:
 
 Programação Orientada a Objetos
-
 Modelagem de sistemas de software
-
 Desenvolvimento de sistemas de comércio eletrônico
 
-O objetivo é demonstrar como conceitos fundamentais de programação podem ser utilizados na construção de soluções aplicadas a problemas reais do mundo digital, aproximando a teoria estudada em sala de aula da prática de desenvolvimento de software.
+A adaptação para uma loja esportiva demonstra como conceitos de POO podem ser aplicados a cenários reais de negócios digitais, aproximando a teoria estudada em sala de aula da prática de desenvolvimento de software.
