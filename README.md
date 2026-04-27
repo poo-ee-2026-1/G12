@@ -67,40 +67,38 @@ Objetivo do Projeto
 ​listarProdutos(): Exibe o catálogo disponível para o cliente.
 ​registrarPedido(carrinho): Processa a venda, atualiza o estoque global de forma automática e soma o valor ao faturamento da loja.
 
-Aplicação dos Conceitos de POO
+​Conceitos de POO Aplicados
 
-​Para garantir a escalabilidade mencionada no objetivo, o código aplica os pilares de POO da seguinte forma:
+​A robustez do projeto advém da implementação dos quatro pilares da Programação Orientada a Objetos:
 
-​Encapsulamento: Os dados sensíveis (como faturamento e estoque) são protegidos, sendo acessados apenas por métodos seguros, evitando alterações indevidas.
+​Abstração: Utilizada para modelar as complexidades do mundo real em entidades sistêmicas simplificadas. Focamos apenas nos atributos e comportamentos essenciais para o funcionamento da loja (como preço e estoque), ignorando detalhes irrelevantes ao software.
 
-​Herança: A classe ProdutoEsportivo serve como base para especializações, permitindo que classes como Calcados ou Vestuario herdem comportamentos comuns, mas possuam atributos específicos (como numeração ou tipo de tecido).
+​Encapsulamento: Garante que dados sensíveis, como o faturamento total e os níveis de estoque, sejam protegidos contra acessos externos indevidos. A manipulação desses dados ocorre exclusivamente através de métodos seguros e controlados.
 
-​Polimorfismo: Permite que diferentes categorias de produtos reajam de formas distintas ao mesmo comando (como o cálculo de desconto ou exibição de detalhes), mantendo a interface do sistema padronizada.
+​Herança: Permite a especialização dos produtos. A classe base ProdutoEsportivo compartilha sua estrutura com classes filhas (ex: Calçados, Equipamentos), permitindo que categorias específicas possuam atributos próprios sem repetir código.
 
-????Funcionalidades do Sistema
-Entre as principais funcionalidades implementadas estão:
+​Polimorfismo: Oferece flexibilidade ao sistema, permitindo que diferentes tipos de produtos executem comportamentos comuns (como a exibição de detalhes ou cálculos de desconto) de formas distintas, adaptadas a cada categoria.
 
-Cadastro de produtos esportivos
-Controle de estoque (indicando produtos esgotados quando necessário)
-Simulação de carrinho de compras
-Registro de vendas realizadas
-Controle de faturamento da loja
-Possíveis Melhorias Futuras
+Funcionalidades Implementadas
 
-O projeto pode ser expandido com novas funcionalidades, tais como:
+​O sistema entrega um conjunto completo de operações que garantem o gerenciamento eficiente do e-commerce:
 
-Sistema de login para clientes
-Avaliação de produtos por usuários
-Recomendações de produtos personalizadas
-Dashboard de vendas por categoria
-Integração com banco de dados
-Histórico de compras por cliente
-Contexto Acadêmico
+​Gestão de Inventário: Cadastro detalhado de produtos esportivos com controle de estoque em tempo real, incluindo sinalização de itens esgotados.
 
-Este projeto foi desenvolvido como uma aplicação prática dos conceitos de:
+​Pipeline de Vendas: Simulação completa de carrinho de compras, permitindo a adição, remoção e revisão de itens antes do fechamento.
 
-Programação Orientada a Objetos
-Modelagem de sistemas de software
-Desenvolvimento de sistemas de comércio eletrônico
+​Inteligência de Negócio: Registro automatizado de vendas e controle centralizado do faturamento total da loja.
 
-A adaptação para uma loja esportiva demonstra como conceitos de POO podem ser aplicados a cenários reais de negócios digitais, aproximando a teoria estudada em sala de aula da prática de desenvolvimento de software.
+​Possíveis Melhorias Futuras
+
+​Este projeto foi desenhado para ser escalável, permitindo a implementação futura de módulos como:
+
+​Personalização: Sistema de login para clientes, histórico de compras individual e recomendações de produtos baseadas em preferências.
+
+​Análise de Dados: Dashboards de vendas por categoria e sistemas de avaliação de produtos por usuários.
+
+​Infraestrutura: Integração com bancos de dados relacionais e interfaces gráficas para o usuário (GUI).
+
+​Contexto Acadêmico
+
+​Este projeto é uma aplicação prática desenvolvida para consolidar conhecimentos em Programação Orientada a Objetos, Modelagem de Sistemas de Software e E-commerce. A adaptação para o segmento esportivo demonstra como conceitos teóricos complexos podem ser aplicados a cenários reais de negócios digitais, aproximando a teoria estudada em sala de aula da prática de desenvolvimento de software profissional.
