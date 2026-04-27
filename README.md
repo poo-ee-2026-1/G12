@@ -68,10 +68,12 @@ Objetivo do Projeto
 ​registrarPedido(carrinho): Processa a venda, atualiza o estoque global de forma automática e soma o valor ao faturamento da loja.
 
 Aplicação dos Conceitos de POO
-
 ​Para garantir a escalabilidade mencionada no objetivo, o código aplica os pilares de POO da seguinte forma:
+
 ​Encapsulamento: Os dados sensíveis (como faturamento e estoque) são protegidos, sendo acessados apenas por métodos seguros, evitando alterações indevidas.
+
 ​Herança: A classe ProdutoEsportivo serve como base para especializações, permitindo que classes como Calcados ou Vestuario herdem comportamentos comuns, mas possuam atributos específicos (como numeração ou tipo de tecido).
+
 ​Polimorfismo: Permite que diferentes categorias de produtos reajam de formas distintas ao mesmo comando (como o cálculo de desconto ou exibição de detalhes), mantendo a interface do sistema padronizada.
 
 ????Funcionalidades do Sistema
