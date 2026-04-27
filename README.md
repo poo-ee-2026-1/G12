@@ -1,6 +1,7 @@
  Sistema de Gerenciamento de E-commerce
 
-CRONOGRAMA	
+CRONOGRAMA
+
 23/03/2026	Fixar o objetivo da loja
 
 30/03/2026	Montar lista de produtos
