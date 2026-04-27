@@ -2,25 +2,25 @@ CRONOGRAMA
 
 23/03/2026	Fixar o objetivo da loja
 
-30/03/2026	Montar lista de produtos
+30/03/2026	Montar lista de produtos e categorias.
 
-06/04/2026	Criação de perfil da loja (P/clientes)
+06/04/2026	Criação de perfil da loja (P/clientes).
 
-13/04/2026
+13/04/2026 Criação das classes principais e métodos vazios.
 
-20/04/2026	Faturamento da loja diário
+20/04/2026	Implementação do faturamento diário da loja.
 
-27/04/2026	
+27/04/2026	Validar cálculos de preço, estoque e soma de faturamento.
 
-04/05/2026	Histórico de vendas
+04/05/2026	Desenvolvimento do histórico de vendas.
 
-11/05/2026	Agregação Herança
+11/05/2026	Implementação de Agregação e Herança.
 
-18/05/2026	
+18/05/2026	Revisão do código para aplicar polimorfísmo e abstração.
 
-25/05/2026	Encapsulamento
+25/05/2026	Aplicações finais de Encapsulamento.
 
-01/06/2026	Finalização do projeto
+01/06/2026	Finalização do projeto.
 
  Sistema de Gerenciamento de E-commerce
 
