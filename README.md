@@ -1,5 +1,3 @@
- Sistema de Gerenciamento de E-commerce
-
 CRONOGRAMA
 
 23/03/2026	Fixar o objetivo da loja
@@ -24,6 +22,7 @@ CRONOGRAMA
 
 01/06/2026	Finalização do projeto
 
+ Sistema de Gerenciamento de E-commerce
 
 Projeto: Sistema de Loja Esportiva Virtual com POO
 
