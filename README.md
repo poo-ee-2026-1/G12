@@ -27,33 +27,14 @@ CRONOGRAMA
 
 Projeto: Sistema de Loja Esportiva Virtual com POO
 
-Este projeto foi desenvolvido para aplicar conceitos de Programação Orientada a Objetos (POO) em um sistema que simula o funcionamento de uma loja esportiva virtual.
+ Este projeto foi desenvolvido para aplicar conceitos de Programação Orientada a Objetos (POO) em um sistema que simula o funcionamento de uma loja esportiva virtual.
 
-O sistema permite cadastrar produtos esportivos, controlar estoque, gerenciar carrinhos de compras e registrar pedidos realizados por clientes, simulando a experiência de compra de grandes plataformas de e-commerce, mas voltada exclusivamente para artigos esportivos.
+ O sistema permite cadastrar produtos esportivos, controlar estoque, gerenciar carrinhos de compras e registrar pedidos realizados por clientes, simulando a experiência de compra de grandes plataformas de e-commerce, mas voltada exclusivamente para artigos esportivos.
 
 Objetivo do Projeto
 
-O objetivo principal é criar um sistema capaz de:
-
-Gerenciar produtos esportivos da loja virtual, como tênis, roupas e equipamentos
-Controlar o estoque de mercadorias
-Simular um carrinho de compras para clientes
-Registrar compras realizadas
-Gerar controle de faturamento da loja
-
-Além disso, o projeto integra conceitos importantes do comércio eletrônico adaptados ao segmento esportivo, como:
-
-Gestão de produtos por categoria esportiva
-Controle de estoque de produtos de alta e baixa rotatividade
-Processamento de pedidos com atualização automática de estoque
-Gestão do faturamento por vendas realizadas
-
-Paralelamente, o sistema aplica conceitos fundamentais de POO, incluindo:
-
-Encapsulamento
-Herança
-Polimorfismo
-Estrutura do Projeto
+ O objetivo central deste sistema é simular o funcionamento completo de uma loja esportiva virtual, utilizando essa estrutura como base para a aplicação prática dos pilares da Programação Orientada a Objetos (POO). A proposta foca em gerenciar o ciclo de vida dos produtos esportivos — desde o cadastro de itens como calçados, vestuário e equipamentos até o controle dinâmico de estoque e faturamento diário da loja. Através de uma arquitetura que integra as classes ProdutoEsportivo, CarrinhoDeCompras e SistemaLojaEsportiva, o projeto busca replicar a experiência de grandes plataformas de e-commerce, permitindo que o usuário gerencie carrinhos, registre pedidos e acompanhe o histórico de vendas de forma organizada e eficiente.
+​ Paralelamente à gestão comercial, o projeto tem como meta a excelência técnica na implementação de conceitos fundamentais de engenharia de software. O sistema utiliza o Encapsulamento para garantir a proteção e manipulação segura dos dados através de métodos específicos, a Herança para permitir a especialização de produtos com atributos únicos, e o Polimorfismo para conferir comportamentos distintos a diferentes tipos de mercadorias sem perder a integridade da lógica central. Dessa forma, o objetivo transcende a simples automação de vendas, consolidando-se como uma aplicação escalável e bem estruturada, pronta para futuras expansões como a integração com bancos de dados e dashboards de análise de vendas.
 
 O sistema é composto por três classes principais que representam as entidades fundamentais de uma loja esportiva:
 
@@ -65,17 +46,15 @@ Tênis de corrida
 Bola de futebol
 Camisas de times
 Luvas de boxe
-Acessórios fitness (garrafas, tapetes, faixas elásticas, etc.)
+Acessórios fitness
 
 Atributos:
-
 nome
 preco
 estoque
 categoria (ex: calçados, equipamentos, vestuário)
 
 Métodos:
-
 atualizarEstoque(quantidade) → Atualiza a quantidade disponível após venda ou reposição
 verificarDisponibilidade() → Verifica se o produto ainda possui unidades disponíveis
 exibirInformacoes() → Exibe detalhes do produto, incluindo nome, preço, categoria e quantidade em estoque
