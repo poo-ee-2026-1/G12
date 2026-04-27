@@ -38,7 +38,7 @@ Objetivo do Projeto
 
 ​Estrutura do Sistema
 
-​O sistema é fundamentado em três classes principais que interagem entre si para garantir o fluxo de venda e a organização dos dados.
+​O sistema é fundamentado em três classes principais que interagem entre si para garantir o fluxo de venda e a organização dos dados. As classes descritas abaixo servem como moldes para a criação dos objetos que compõem o sistema, permitindo que cada item do estoque ou carrinho seja tratado como uma instância única com seus próprios dados.
 
 ​ Classe ProdutoEsportivo
 
