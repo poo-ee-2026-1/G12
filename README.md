@@ -47,7 +47,6 @@ Objetivo do Projeto
 ​Atributos: Incluem o nome, preço, quantidade em estoque e categoria (ex: calçados, equipamentos).
 
 ​Métodos Principais:
-
 ​atualizarEstoque(quantidade): Gerencia a entrada e saída de itens após vendas ou reposições.
 ​verificarDisponibilidade(): Valida se há unidades suficientes para atender a um pedido.
 ​exibirInformacoes(): Retorna os detalhes completos do produto para o usuário.
@@ -55,7 +54,9 @@ Objetivo do Projeto
 ​ Classe CarrinhoDeCompras
 
 ​Funciona como uma entidade temporária que armazena a intenção de compra do cliente, permitindo a manipulação dos itens antes da finalização do pedido.
+
 ​Atributos: Mantém uma lista dinâmica de produtos selecionados e a contagem das quantidades de cada item.
+
 ​Métodos Principais:
 ​adicionarProduto(produto, quantidade): Insere itens no carrinho.
 ​removerProduto(produto): Retira itens previamente selecionados.
@@ -64,7 +65,9 @@ Objetivo do Projeto
 ​ Classe SistemaLojaEsportiva
 
 ​É o núcleo (core) da aplicação, funcionando como o administrador central que conecta os produtos aos pedidos e gera os dados financeiros.
+
 ​Atributos: Gerencia o catálogo completo de produtos da loja, o histórico de pedidos realizados e o faturamento total acumulado.
+
 ​Métodos Principais:
 ​cadastrarProduto(produto): Adiciona novos itens ao portfólio da loja.
 ​listarProdutos(): Exibe o catálogo disponível para o cliente.
