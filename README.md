@@ -37,6 +37,7 @@ Objetivo do Projeto
  O projeto tem como meta a excelência técnica na implementação de conceitos fundamentais de engenharia de software. O sistema utiliza o Encapsulamento para garantir a proteção e manipulação segura dos dados através de métodos específicos, a Herança para permitir a especialização de produtos com atributos únicos, e o Polimorfismo para conferir comportamentos distintos a diferentes tipos de mercadorias sem perder a integridade da lógica central. Dessa forma, o objetivo transcende a simples automação de vendas, consolidando-se como uma aplicação escalável e bem estruturada, pronta para futuras expansões como a integração com bancos de dados e dashboards de análise de vendas.
 
 ​Estrutura do Sistema
+
 ​O sistema é fundamentado em três classes principais que interagem entre si para garantir o fluxo de venda e a organização dos dados.
 
 ​ Classe ProdutoEsportivo
