@@ -43,8 +43,11 @@ Objetivo do Projeto
 ​ Classe ProdutoEsportivo
 
 ​Esta classe representa a entidade base de qualquer item disponível na loja, como tênis, camisas ou acessórios fitness. Ela é responsável por carregar as informações fundamentais e as regras de disponibilidade do item.
+
 ​Atributos: Incluem o nome, preço, quantidade em estoque e categoria (ex: calçados, equipamentos).
+
 ​Métodos Principais:
+
 ​atualizarEstoque(quantidade): Gerencia a entrada e saída de itens após vendas ou reposições.
 ​verificarDisponibilidade(): Valida se há unidades suficientes para atender a um pedido.
 ​exibirInformacoes(): Retorna os detalhes completos do produto para o usuário.
