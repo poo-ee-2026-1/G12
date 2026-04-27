@@ -36,96 +36,44 @@ Objetivo do Projeto
  
  O projeto tem como meta a excelência técnica na implementação de conceitos fundamentais de engenharia de software. O sistema utiliza o Encapsulamento para garantir a proteção e manipulação segura dos dados através de métodos específicos, a Herança para permitir a especialização de produtos com atributos únicos, e o Polimorfismo para conferir comportamentos distintos a diferentes tipos de mercadorias sem perder a integridade da lógica central. Dessa forma, o objetivo transcende a simples automação de vendas, consolidando-se como uma aplicação escalável e bem estruturada, pronta para futuras expansões como a integração com bancos de dados e dashboards de análise de vendas.
 
-O sistema é composto por três classes principais que representam as entidades fundamentais de uma loja esportiva:
+​Estrutura do Sistema
+​O sistema é fundamentado em três classes principais que interagem entre si para garantir o fluxo de venda e a organização dos dados.
 
-1️. Classe ProdutoEsportivo
+​ Classe ProdutoEsportivo
 
-A classe ProdutoEsportivo representa cada item disponível para venda na loja, como:
+​Esta classe representa a entidade base de qualquer item disponível na loja, como tênis, camisas ou acessórios fitness. Ela é responsável por carregar as informações fundamentais e as regras de disponibilidade do item.
+​Atributos: Incluem o nome, preço, quantidade em estoque e categoria (ex: calçados, equipamentos).
+​Métodos Principais:
+​atualizarEstoque(quantidade): Gerencia a entrada e saída de itens após vendas ou reposições.
+​verificarDisponibilidade(): Valida se há unidades suficientes para atender a um pedido.
+​exibirInformacoes(): Retorna os detalhes completos do produto para o usuário.
 
-Tênis de corrida
-Bola de futebol
-Camisas de times
-Luvas de boxe
-Acessórios fitness
+​ Classe CarrinhoDeCompras
 
-Atributos:
-nome
-preco
-estoque
-categoria (ex: calçados, equipamentos, vestuário)
+​Funciona como uma entidade temporária que armazena a intenção de compra do cliente, permitindo a manipulação dos itens antes da finalização do pedido.
+​Atributos: Mantém uma lista dinâmica de produtos selecionados e a contagem das quantidades de cada item.
+​Métodos Principais:
+​adicionarProduto(produto, quantidade): Insere itens no carrinho.
+​removerProduto(produto): Retira itens previamente selecionados.
+​exibirCarrinho(): Apresenta o resumo de todos os itens e subtotais acumulados.
 
-Métodos:
-atualizarEstoque(quantidade) → Atualiza a quantidade disponível após venda ou reposição
-verificarDisponibilidade() → Verifica se o produto ainda possui unidades disponíveis
-exibirInformacoes() → Exibe detalhes do produto, incluindo nome, preço, categoria e quantidade em estoque
-2️. Classe CarrinhoDeCompras
+​ Classe SistemaLojaEsportiva
 
-Simula o carrinho utilizado pelo cliente durante a compra na loja esportiva.
+​É o núcleo (core) da aplicação, funcionando como o administrador central que conecta os produtos aos pedidos e gera os dados financeiros.
+​Atributos: Gerencia o catálogo completo de produtos da loja, o histórico de pedidos realizados e o faturamento total acumulado.
+​Métodos Principais:
+​cadastrarProduto(produto): Adiciona novos itens ao portfólio da loja.
+​listarProdutos(): Exibe o catálogo disponível para o cliente.
+​registrarPedido(carrinho): Processa a venda, atualiza o estoque global de forma automática e soma o valor ao faturamento da loja.
 
-Atributos:
+Aplicação dos Conceitos de POO
 
-listaProdutos (produtos adicionados ao carrinho)
-quantidadeProdutos (quantidade de cada produto)
+​Para garantir a escalabilidade mencionada no objetivo, o código aplica os pilares de POO da seguinte forma:
+​Encapsulamento: Os dados sensíveis (como faturamento e estoque) são protegidos, sendo acessados apenas por métodos seguros, evitando alterações indevidas.
+​Herança: A classe ProdutoEsportivo serve como base para especializações, permitindo que classes como Calcados ou Vestuario herdem comportamentos comuns, mas possuam atributos específicos (como numeração ou tipo de tecido).
+​Polimorfismo: Permite que diferentes categorias de produtos reajam de formas distintas ao mesmo comando (como o cálculo de desconto ou exibição de detalhes), mantendo a interface do sistema padronizada.
 
-Métodos:
-
-adicionarProduto(produto, quantidade) → Adiciona produtos ao carrinho, incluindo a quantidade desejada
-removerProduto(produto) → Remove produtos previamente adicionados
-exibirCarrinho() → Mostra todos os produtos no carrinho e suas quantidades
-
-O carrinho permite ao cliente revisar os itens antes de finalizar a compra, simulando o processo real de e-commerce.
-
-3️. Classe SistemaLojaEsportiva
-
-Representa o núcleo do sistema, responsável por gerenciar os produtos e registrar os pedidos dos clientes.
-
-Atributos:
-
-listaProdutos (todos os produtos disponíveis na loja)
-pedidosRealizados (histórico de compras)
-faturamentoTotal (valor total das vendas)
-
-Métodos:
-
-cadastrarProduto(produto) → Adiciona novos produtos ao catálogo da loja
-listarProdutos() → Exibe todos os produtos disponíveis para venda
-registrarPedido(carrinho) → Registra o pedido do cliente e atualiza automaticamente o estoque dos produtos comprados
-
-O SistemaLojaEsportiva é responsável por organizar todo o funcionamento da loja, garantindo que os produtos estejam disponíveis e que as compras sejam corretamente registradas.
-
-Relacionamento entre Classes
-
-O fluxo de interação entre as classes é o seguinte:
-
-SistemaLojaEsportiva
-       │
-       │ gerencia
-       ▼
-   ProdutoEsportivo
-       │
-       │ adicionado ao
-       ▼
- CarrinhoDeCompras
-
-O SistemaLojaEsportiva administra todos os produtos disponíveis na loja. Os produtos podem ser adicionados ao CarrinhoDeCompras, permitindo que os clientes finalizem suas compras de forma organizada e eficiente.
-
-Conceitos de POO Aplicados
-
-Encapsulamento:
-Os atributos das classes são protegidos e manipulados por métodos específicos, garantindo maior controle e segurança sobre os dados.
-
-Herança:
-A classe ProdutoEsportivo pode servir como base para diferentes tipos de produtos especializados:
-
-Calçados → podem ter atributos como número, tipo de pisada e material
-Vestuário → podem ter tamanho, material e gênero
-Equipamentos → podem ter peso, tipo de uso e categoria esportiva
-
-Polimorfismo:
-Permite que diferentes tipos de produtos possuam comportamentos próprios em métodos específicos, mantendo a mesma estrutura básica da classe principal. Isso facilita a expansão do sistema, permitindo adicionar novos tipos de produtos sem alterar a lógica central.
-
-Funcionalidades do Sistema
-
+????Funcionalidades do Sistema
 Entre as principais funcionalidades implementadas estão:
 
 Cadastro de produtos esportivos
