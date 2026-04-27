@@ -22,7 +22,10 @@ CRONOGRAMA
 
 01/06/2026	Finalização do projeto.
 
-Diagrama: <img width="612" height="654" alt="Captura de tela 2026-04-27 180149" src="https://github.com/user-attachments/assets/48c6500e-9932-4875-b798-3df332f7bc44" />
+Diagrama:<img width="612" height="654" alt="Captura de tela 2026-04-27 180149" src="https://github.com/user-attachments/assets/b71c9817-3a8f-451c-a5b5-f78ea6ce7ae5" />
+
+
+
 
 
 
