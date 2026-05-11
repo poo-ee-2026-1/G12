@@ -56,7 +56,6 @@ Objetivo do Projeto
 ​Métodos Principais:
 ​atualizarEstoque(quantidade): Gerencia a entrada e saída de itens após vendas ou reposições.
 ​verificarDisponibilidade(): Valida se há unidades suficientes para atender a um pedido.
-​exibirInformacoes(): Retorna os detalhes completos do produto para o usuário.
 
 ​ Classe CarrinhoDeCompras
 
