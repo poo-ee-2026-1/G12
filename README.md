@@ -8,7 +8,7 @@ CRONOGRAMA
 
 13/04/2026 Criação das classes principais e métodos vazios.
 
-20/04/2026	Implementação do faturamento diário da loja.
+20/04/2026	Implementação do faturamento da loja.
 
 27/04/2026	Validar cálculos de preço, estoque e soma de faturamento.
 
@@ -104,8 +104,6 @@ Funcionalidades Implementadas
 ​Possíveis Melhorias Futuras
 
 ​Este projeto foi desenhado para ser escalável, permitindo a implementação futura de módulos como:
-
-​Personalização: Sistema de login para clientes, histórico de compras individual e recomendações de produtos baseadas em preferências.
 
 ​Análise de Dados: Dashboards de vendas por categoria e sistemas de avaliação de produtos por usuários.
 
